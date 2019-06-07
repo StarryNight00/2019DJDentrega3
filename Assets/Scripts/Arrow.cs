@@ -9,11 +9,12 @@ public class Arrow : MonoBehaviour
 
     [SerializeField] Collider2D collider;
     Rigidbody2D                 rigidBody;
+    ShotControl                 shotCtrl;
 
-    internal float      speed = 400;
+    private float       speed = 400.0f;
     private float       timer;
 
-    public Vector3      moveVector;
+    
     private Vector3     startPos;
     private Vector3     hVector;
     public Transform    hitPos;
@@ -21,10 +22,9 @@ public class Arrow : MonoBehaviour
     void Start()
     {
         collider = GetComponent<Collider2D>();
+        shotCtrl = GetComponent<ShotControl>();
 
-
-        startPos = transform.position;
-        
+        startPos = shotCtrl.transform.position;
     }
 
     private void FixedUpdate()

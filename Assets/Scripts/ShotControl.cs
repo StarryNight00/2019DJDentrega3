@@ -11,7 +11,7 @@ class ShotControl : MonoBehaviour
     Jacob               pJacob;
 
     private bool        arrowShot;
-
+    private float       speed = 400.0f;
     public float        cooldownTime = 2.5f;
     public GameObject   projectile;
     //private Rigidbody2D rigidBody;
@@ -48,11 +48,14 @@ class ShotControl : MonoBehaviour
     {
         //Vector2 velocity = rigidBody.velocity;
         Quaternion rotation = transform.rotation;
-
+        /*
         if (((velocity.x * transform.right.x) < 0.0f) && (velocity.x < 0.0f)) transform.rotation = Quaternion.Euler(0, 180, 0);
         else if (((velocity.x * transform.right.x) < 0.0f) && (velocity.x > 0.0f)) transform.rotation = Quaternion.Euler(0, 0, 0);
-
+        */
         GameObject arrow = Instantiate(projectile, pos, rotation);
+        Rigidbody2D arrowRB = arrow.GetComponent<Rigidbody2D>();
+        arrowRB.velocity = transform.rotation * Vector2.right * speed;
+
         cooldown = cooldownTime;
     }
 

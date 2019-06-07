@@ -158,7 +158,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 14.46, y: 9.9}
+  m_Size: {x: 14.5, y: 9}
   m_EdgeRadius: 0
 --- !u!114 &3395468079044411613
 MonoBehaviour:
@@ -173,6 +173,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 3354739196628990626}
-  speed: -400
   moveVector: {x: 1, y: 0, z: 0}
   hitPos: {fileID: 2133762586976706639}
