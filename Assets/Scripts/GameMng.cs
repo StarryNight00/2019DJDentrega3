@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameMng : MonoBehaviour
@@ -47,7 +48,7 @@ public class GameMng : MonoBehaviour
         if (currentTime <= 0)
         {
             //GameOver
-            Debug.Log("Game Over");
+            SceneManager.LoadScene("GameOver");
         }
 
         //Debug.Log(currentTime);

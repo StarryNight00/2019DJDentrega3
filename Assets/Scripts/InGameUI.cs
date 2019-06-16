@@ -26,6 +26,9 @@ public class InGameUI : MonoBehaviour
         if (seconds >= 10)
         {
             timeDisplayText.text = "" + minutes + " : " + seconds;
+        }else if (minutes <= 0)
+        {
+            timeDisplayText.text = "0 : 00";
         }
         else
         {
