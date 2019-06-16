@@ -12,6 +12,7 @@ public class GameMng : MonoBehaviour
 
     private float           currentTime;
     private int             currentScore;
+    internal int            highscore;
 
     public static GameMng   instance;
 
@@ -37,7 +38,7 @@ public class GameMng : MonoBehaviour
 
         currentTime = maxTime;
 
-         iventory = new List<string>();
+        iventory = new List<string>();
     }
 
 
@@ -70,6 +71,10 @@ public class GameMng : MonoBehaviour
     public void AddScore(int score)
     {
         currentScore += score;
+        if (currentScore > highscore)
+        {
+            highscore = currentScore;
+        }
     }
 
     public int GetCurrentScore()
@@ -100,5 +105,10 @@ public class GameMng : MonoBehaviour
         {
             iventory.RemoveAt(index);
         }
+    }
+
+    public int GetHighScore()
+    {
+        return highscore;
     }
 }
