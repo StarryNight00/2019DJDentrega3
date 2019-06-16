@@ -8,7 +8,7 @@ public class PickUpChange : MonoBehaviour
     [SerializeField] Sprite newSprite;
 
     [SerializeField] protected string itemName;
-    [SerializeField] int scoreToAdd = 0;
+    [SerializeField] private int scoreToAdd = 0;
 
     private GameMng gameMng;
 

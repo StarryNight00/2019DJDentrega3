@@ -51,8 +51,10 @@ public class GameMng : MonoBehaviour
             SceneManager.LoadScene("GameOver");
         }
 
-        //Debug.Log(currentTime);
-        Debug.Log(iventory);
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
 
     public void LoseTime()
