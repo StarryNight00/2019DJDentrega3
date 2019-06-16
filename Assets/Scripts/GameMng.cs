@@ -14,7 +14,7 @@ public class GameMng : MonoBehaviour
 
     public static GameMng   instance;
 
-    public List<string>  iventory;
+    protected List<string>  iventory;
 
     private void Awake()
     {
@@ -80,6 +80,13 @@ public class GameMng : MonoBehaviour
         {
             iventory.Add(itemName);
         } 
+    }
+
+    public bool HasItem(string itemName)
+    {
+        int index = iventory.IndexOf(itemName);
+
+        return (index != -1);
     }
 
     public void RemoveFromIventory(string itemName)

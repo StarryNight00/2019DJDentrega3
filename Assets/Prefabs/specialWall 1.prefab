@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7210464557644636844}
   - component: {fileID: 7210464557644636845}
   - component: {fileID: 7210464557644636841}
-  - component: {fileID: 7210464557644636846}
+  - component: {fileID: 4262367006910272305}
   m_Layer: 0
   m_Name: specialWall 1
   m_TagString: SpWall
@@ -127,7 +127,7 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
---- !u!114 &7210464557644636846
+--- !u!114 &4262367006910272305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,4 +139,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220d6549059f77246ba78126b8ec4e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Brick

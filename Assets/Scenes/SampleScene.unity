@@ -112,6 +112,85 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &13913660
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4178861286757132729, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: m_Name
+      value: PickUpItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 390.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 156.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285654110493274932, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: scoreToAdd
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5285654110493274932, guid: 8a506e3722d611949b4fdbc0d56cc579,
+        type: 3}
+      propertyPath: itemName
+      value: Brick
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a506e3722d611949b4fdbc0d56cc579, type: 3}
 --- !u!4 &85248588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7307802938455573225, guid: 48cd33f3b06763848aadcaffb8a5a589,
@@ -150,21 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220d6549059f77246ba78126b8ec4e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Lever3
+  item: 
 --- !u!251 &85913945
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -472,21 +537,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3c36e7c15bdcb4ebb9681447a6af18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Brick
+  scoreToAdd: 0
+  itemName: 
 --- !u!212 &176168012
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -624,21 +676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220d6549059f77246ba78126b8ec4e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Lever2
+  item: 
 --- !u!251 &275506396
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -1137,21 +1175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3c36e7c15bdcb4ebb9681447a6af18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Brick
+  scoreToAdd: 0
+  itemName: 
 --- !u!212 &542148738
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3577,21 +3602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3c36e7c15bdcb4ebb9681447a6af18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: FinalLever2
+  scoreToAdd: 0
+  itemName: 
 --- !u!212 &602507016
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3904,21 +3916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220d6549059f77246ba78126b8ec4e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Lever4
+  item: 
 --- !u!251 &745483139
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -13389,21 +13387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220d6549059f77246ba78126b8ec4e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: FinalLever1
+  item: 
 --- !u!251 &1246543768
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -13543,21 +13527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220d6549059f77246ba78126b8ec4e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: FinalLever2
+  item: 
 --- !u!251 &1285432570
 PlatformEffector2D:
   m_ObjectHideFlags: 0
@@ -14026,21 +13996,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3c36e7c15bdcb4ebb9681447a6af18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Lever2
+  scoreToAdd: 0
+  itemName: 
 --- !u!212 &1419639781
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14161,21 +14118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3c36e7c15bdcb4ebb9681447a6af18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: FinalLever1
+  scoreToAdd: 0
+  itemName: 
 --- !u!212 &1436856407
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14867,21 +14811,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3c36e7c15bdcb4ebb9681447a6af18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Lever3
+  scoreToAdd: 0
+  itemName: 
 --- !u!212 &1618141003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15574,21 +15505,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3c36e7c15bdcb4ebb9681447a6af18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Brick
+  scoreToAdd: 0
+  itemName: 
 --- !u!212 &2086467111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15708,21 +15626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3c36e7c15bdcb4ebb9681447a6af18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Lever4
+  scoreToAdd: 0
+  itemName: 
 --- !u!212 &2126026770
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15813,21 +15718,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3c36e7c15bdcb4ebb9681447a6af18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Lever1
+  scoreToAdd: 0
+  itemName: 
 --- !u!61 &1610194468087782037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15940,21 +15832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220d6549059f77246ba78126b8ec4e1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Lever1
+  item: 
 --- !u!4 &1923721490873305467
 Transform:
   m_ObjectHideFlags: 0
@@ -16008,80 +15886,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1001 &2101340593311844329
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4178861286757132729, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_Name
-      value: Brick
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -24.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -51.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090503749117676419, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8917629952378142480, guid: 8a506e3722d611949b4fdbc0d56cc579,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8a506e3722d611949b4fdbc0d56cc579, type: 3}
 --- !u!1 &2656104746822117860
 GameObject:
   m_ObjectHideFlags: 0
@@ -16340,6 +16144,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4262367006910272305, guid: 38d5c5e5832c74e4e910f39e2b379b9c,
+        type: 3}
+      propertyPath: item
+      value: Brick
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38d5c5e5832c74e4e910f39e2b379b9c, type: 3}
