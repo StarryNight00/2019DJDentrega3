@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Player[] players;
+    public Player[] players;
 
     Player              currentPlayer;
     int                 playerIndex;
@@ -14,30 +14,10 @@ public class PlayerController : MonoBehaviour
     {
         playerIndex = 0;
 
-        players = FindObjectsOfType<Player>();
-
         CameraControl ctrl = FindObjectOfType<CameraControl>();
         ctrl.target = players[playerIndex].transform;
 
-
-        foreach (Player player in players)
-        {
-            player.OnControlledChanged += OnControlChanged;
-        }
-    }
-
-    private void OnControlChanged(Player player)
-    {
-        if (!player.canControl)
-            return;
-
-        player.transform.position = players[playerIndex].transform.position;
-
-        playerIndex++;
-
-        if (playerIndex >= players.Length) playerIndex = 0;
-
-        currentPlayer = player;
+        currentPlayer = players[playerIndex];
     }
 
     void Update()
@@ -46,7 +26,14 @@ public class PlayerController : MonoBehaviour
         {
             if (currentPlayer is Emma && !currentPlayer.isOnGround) return;
 
-            foreach (Player player in players) player.CanControl = !player.canControl;
+            players[playerIndex].CanControl = false;
+            Vector3 currentPos = players[playerIndex].transform.position;
+
+            playerIndex = (playerIndex + 1) % players.Length;
+
+            players[playerIndex].CanControl = true;
+            players[playerIndex].transform.position = currentPos;
+            currentPlayer = players[playerIndex];
 
             CameraControl ctrl = FindObjectOfType<CameraControl>();
             if (ctrl)

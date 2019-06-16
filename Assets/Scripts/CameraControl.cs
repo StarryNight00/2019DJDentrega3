@@ -10,11 +10,13 @@ public class CameraControl : MonoBehaviour
     public bool         enforceBounds = false;
     public Rect         bounds;
 
+    private Jacob jacob;
+
     Camera camera;
 
     void Start()
     {
-        camera = FindObjectOfType<Camera>();
+        camera = FindObjectOfType<Camera>();        
     }
 
     void FixedUpdate()

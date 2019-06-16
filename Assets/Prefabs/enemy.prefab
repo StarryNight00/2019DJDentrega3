@@ -196,7 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 30
   saveSpeed: 0
-  invulnerabilityDuration: 7
+  invulnerabilityDuration: 3
   groundSensor: {fileID: 7307802937832944303}
   wallSensor: {fileID: 7307802938421834265}
   damageSensor: {fileID: 7307802938455573227}

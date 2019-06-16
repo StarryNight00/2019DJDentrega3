@@ -68,13 +68,13 @@ public class Enemy : Character
         if (moveDirection < 0) transform.rotation = Quaternion.Euler(0.0f, 180.0f, 0.0f);
         if (moveDirection > 0) transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
 
-        Collider2D collider = Physics2D.OverlapCircle(wallSensor.position, 2.0f, LayerMask.GetMask("Ground"));
+        Collider2D collider = Physics2D.OverlapCircle(wallSensor.position, 2.5f, LayerMask.GetMask("Ground"));
         if (collider != null)
         {
             moveDirection = -moveDirection;
         }
 
-        collider = Physics2D.OverlapCircle(groundSensor.position, 2.0f, LayerMask.GetMask("Ground"));
+        collider = Physics2D.OverlapCircle(groundSensor.position, 2.5f, LayerMask.GetMask("Ground"));
         if (collider == null)
         {
             moveDirection = -moveDirection;
@@ -157,13 +157,13 @@ public class Enemy : Character
         if (groundSensor)
         {
             Gizmos.color = Color.magenta;
-            Gizmos.DrawSphere(groundSensor.position, 2.0f);
+            Gizmos.DrawSphere(groundSensor.position, 4.0f);
         }
 
         if (wallSensor)
         {
             Gizmos.color = Color.green;
-            Gizmos.DrawSphere(wallSensor.position, 2.0f);
+            Gizmos.DrawSphere(wallSensor.position, 4.0f);
         }
     }
 }

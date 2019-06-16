@@ -53,7 +53,6 @@ public class Player : Character
         CanControl = canControl;
     }
 
-    // Update is called once per frame
     protected virtual void FixedUpdate()
     {
         if (!canControl)
@@ -118,6 +117,8 @@ public class Player : Character
 
         isInvulnerable = true;
         transform.position = spawnPoint1.position;
+ 
+        GameMng.instance.LoseTime();
     }
 
     public void AddToIventory(string itemName)

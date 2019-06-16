@@ -21,19 +21,10 @@ public class Arrow : MonoBehaviour
 
     void Start()
     {
+        timer = 3.0f;
         collider = GetComponent<Collider2D>();
         shotCtrl = GetComponent<ShotControl>();
-
-        startPos = shotCtrl.transform.position;
-    }
-
-    private void FixedUpdate()
-    {
-        Vector2 directionVel = rigidBody.velocity;
-        hVector.y = startPos.y;
-        timer += Time.fixedDeltaTime;
-
-        transform.position = hVector * speed * directionVel;
+        rigidBody = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -53,12 +44,20 @@ public class Arrow : MonoBehaviour
                 collider = results[i];
 
                 Enemy enemy = collider.GetComponent<Enemy>();
+
                 if (enemy)
                 {
                     enemy.GetNumb();
+                    Destroy(gameObject);
                 }
             }
         }
+
+        if (timer <= 0)
+        {
+            Destroy(gameObject);
+        }
+        timer -= Time.deltaTime;
     }
 
     private void OnDrawGizmos()
