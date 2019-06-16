@@ -6,11 +6,13 @@ using TMPro;
 public class InGameUI : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timeDisplayText;
+    [SerializeField] TextMeshProUGUI scoreDisplayText;
 
 
     private void Update()
     {
         UpdateTimeDisplay();
+        UpdateScoreDisplay();
     }
 
     private void UpdateTimeDisplay()
@@ -28,6 +30,20 @@ public class InGameUI : MonoBehaviour
         else
         {
             timeDisplayText.text = "" + minutes + " : 0" + seconds;
+        }  
+    }
+
+    private void UpdateScoreDisplay()
+    {
+        int score = GameMng.instance.GetCurrentScore();
+        
+        if (score <= 0)
+        {
+            scoreDisplayText.text = "    Score:  ---";
+        }
+        else
+        {
+            scoreDisplayText.text = "    Score:  " + score;
         }
         
     }

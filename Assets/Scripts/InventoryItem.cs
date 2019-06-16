@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryItem : ItemsPick
+public class InventoryItem : PickUp
 {
     [SerializeField] string itemName;
 
-    protected override void NotifyPickUp(Player player)
+    protected override void NotifyPickUp(GameMng gameMng)
     {
-        player.AddToIventory(itemName);
+        gameMng.AddIventory(itemName);
     }
 }
