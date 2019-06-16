@@ -122,4 +122,4 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1201771809598272689}
   newSprite: {fileID: 21300000, guid: a33cd3a7e883b5a49b40368b133bd443, type: 3}
   itemName: 
-  scoreToAdd: 100
+  scoreToAdd: 50

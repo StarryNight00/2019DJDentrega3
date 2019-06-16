@@ -4824,6 +4824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3c36e7c15bdcb4ebb9681447a6af18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreToAdd: 1000
   itemName: Key
 --- !u!61 &8704546415007126898
 BoxCollider2D:
